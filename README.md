@@ -29,7 +29,7 @@ Este projeto contém a resolução dos exercícios propostos no processo seletiv
 ### API RESTful de Usuários  
 - **Pacotes:** `controller`, `service`, `model`, `repository`  
 - **Funcionalidades:** CRUD de usuários (id, nome, email)
-
+- **Documentação:** `api_documentation.md` na raiz do projeto
 ---
 
 ## **Parte 3: Análise e Design**
