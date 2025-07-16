@@ -1,6 +1,5 @@
 # 📋 Resolução Teste Técnico - JAVA
 
-Este projeto contém a resolução dos exercícios propostos no processo seletivo.
 
 ## **Parte 1: Exercícios de Java - Algoritmo**
 
