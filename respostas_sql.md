@@ -408,7 +408,7 @@ ORDER BY o.order_date DESC;
 ---
 
 
-## Resposta 3.6 – Backup incremental e recuperação ponto a ponto
+### 3.6 – Backup incremental e recuperação ponto a ponto
 
 - Faria um **backup completo (full)** semanal e **backups incrementais** diários, salvando apenas as alterações.
 - Ativaria o **WAL archiving** no PostgreSQL para registrar continuamente as mudanças no banco.
@@ -416,7 +416,7 @@ ORDER BY o.order_date DESC;
 - Isso garante recuperação precisa até o momento de interesse, minimizando perda de dados.
 
 ---
-## Resposta 3.7 – Experiência prática de otimização em banco de dados de e-commerce
+### 3.7 – Experiência prática de otimização em banco de dados de e-commerce
 
 Trabalhando com **VTEX**, já tive experiências com reestruturação de tabelas que não seguiam corretamente as boas práticas de normalização.  
 Haviam situações onde uma **única tabela armazenava tanto os dados de cabeçalho do pedido quanto os itens, causando duplicidade de informações e dificultando a manutenção**.
