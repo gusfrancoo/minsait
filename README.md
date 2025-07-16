@@ -227,3 +227,12 @@ Os passos que normalmente sigo são:
 No geral, meu foco é sempre medir antes de mudar, pra evitar aquela armadilha de "premature optimization".  
 Gosto de tratar performance como um problema objetivo, baseado em dados.
 
+--
+
+## **Parte 6: SQL - Consultas e Resolução**
+
+As respostas dos exercícios de SQL estão organizadas em um arquivo separado.
+
+### 📄 Arquivo:
+`RESPOSTAS_SQL.md` na raiz do projeto
+
