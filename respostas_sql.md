@@ -227,19 +227,16 @@ DECLARE
     v_old_balance DECIMAL(15,2);
     v_new_balance DECIMAL(15,2);
 BEGIN
-    -- Calcula o saldo anterior
     SELECT balance + (-NEW.amount) 
     INTO v_old_balance
     FROM accounts
     WHERE account_id = NEW.account_id;
 
-    -- Captura o saldo atual (já com a transação aplicada)
     SELECT balance 
     INTO v_new_balance
     FROM accounts
     WHERE account_id = NEW.account_id;
 
-    -- Insere o registro na tabela de auditoria
     INSERT INTO audit_log (transaction_id, account_id, old_balance, new_balance, change_date)
     VALUES (NEW.transaction_id, NEW.account_id, v_old_balance, v_new_balance, NOW());
 
