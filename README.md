@@ -1,4 +1,4 @@
-# 📋 Processo Seletivo - Resolução de Exercícios
+# 📋 Resolução Teste Técnico
 
 Este projeto contém a resolução dos exercícios propostos no processo seletivo.
 
@@ -80,5 +80,23 @@ Ele facilita a persistência de objetos em bancos de dados relacionais, eliminan
   Como o Hibernate usa consultas parametrizadas internamente (JPQL/HQL ou Criteria API), ele **minimiza o risco de SQL Injection** ao evitar concatenação direta de strings em comandos SQL.
 
 ---
+
+### 2️⃣ Testes Unitários
+
+Os **testes unitários** são fundamentais no desenvolvimento de software porque:
+
+- Garantem que as classes e métodos funcionam corretamente de forma isolada.
+- Facilitam a identificação de erros durante o desenvolvimento.
+- Permitem a refatoração segura do código, sem medo de quebrar funcionalidades existentes.
+- Aumentam a confiabilidade e reduzem o custo de manutenção do sistema.
+
+---
+
+#### **Teste da classe CacheLRU**
+
+Foi implementado um teste unitário para a classe `CacheLRU` utilizando o **JUnit 5**.
+
+##### **Local do teste:**
+`src/test/java/com/minsait/user_api/CacheLRUTest.java`
 
 
