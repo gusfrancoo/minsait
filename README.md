@@ -52,5 +52,33 @@ Este projeto contém a resolução dos exercícios propostos no processo seletiv
 
 ---
 
+## **Parte 4: Frameworks e Ferramentas**
+
+### 1️⃣ Hibernate
+
+O **Hibernate** é um framework de **mapeamento objeto-relacional (ORM)** para Java.  
+Ele facilita a persistência de objetos em bancos de dados relacionais, eliminando a necessidade de escrever SQL manualmente para operações básicas.
+
+#### **Principais benefícios do Hibernate:**
+
+- **Abstração do SQL:**  
+  O Hibernate converte classes Java em tabelas do banco de dados e atributos em colunas, usando anotações ou XML.
+
+- **Automação do CRUD:**  
+  Operações como `save`, `find`, `update`, `delete` são feitas via métodos simples, sem SQL explícito.
+
+- **Portabilidade entre bancos:**  
+  Não precisa alterar o código para trocar o banco (MySQL, PostgreSQL, Oracle, etc).
+
+- **Gerenciamento de sessão e transação:**  
+  O Hibernate cuida da comunicação e do ciclo de vida dos objetos persistentes.
+
+- **Suporte a lazy loading e caching:**  
+  Carregamento sob demanda e otimização de acesso ao banco.
+
+- **Redução de risco de SQL Injection:**  
+  Como o Hibernate usa consultas parametrizadas internamente (JPQL/HQL ou Criteria API), ele **minimiza o risco de SQL Injection** ao evitar concatenação direta de strings em comandos SQL.
+
+---
 
 
