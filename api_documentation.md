@@ -1,6 +1,28 @@
 
 # 📡 API - Usuários
 
+1️⃣ **Pré-requisitos:**
+
+- [Docker](https://www.docker.com/products/docker-desktop) instalado
+- [Docker Compose](https://docs.docker.com/compose/install/) (se não estiver incluso no Docker Desktop)
+
+2️⃣ **Rodar o projeto:**
+
+```bash
+  docker-compose up --build
+```
+
+> **Obs:**  
+O Docker irá:
+- **Construir a imagem da API e executar o build do Maven automaticamente (multi-stage build)**
+- **Subir o banco de dados PostgreSQL com a estrutura pronta**
+- **Iniciar a aplicação na porta `8080`**
+
+3️⃣ **Acessar a API:**
+
+- **Base URL:** [http://localhost:8080](http://localhost:8080)
+
+---
 
 ## 🧾 Modelo de Dados - User
 
