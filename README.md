@@ -42,7 +42,7 @@ Este projeto contém a resolução dos exercícios propostos no processo seletiv
 
 ### 2️⃣ Refatoração do Order (SOLID)  
 - **Pacote:** `orderdemo`  
-- **Local:** `src/main/java/com/minsait/user_api/utils/orderdemo/`  
+- **Local:** `src/main/java/com/minsait/user_api/utils/OrderRefactor/`  
 - **Arquivos:**  
     - `Item.java`  
     - `Order.java`  
