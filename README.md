@@ -1,4 +1,4 @@
-# 📋 Resolução Teste Técnico
+# 📋 Resolução Teste Técnico - JAVA
 
 Este projeto contém a resolução dos exercícios propostos no processo seletivo.
 
@@ -148,6 +148,82 @@ Quando o foco é performance, flexibilidade ou integração com outras tecnologi
 
 ---
 
+## 5️⃣ Resolução de Problemas
 
+### 1️⃣ Debugging
 
+Quando preciso fazer debugging em uma aplicação Java mais complexa, o meu foco principal é entender exatamente o que está acontecendo, de forma prática e objetiva.  
+O processo que costumo seguir é:
+
+1. **Reproduzir o problema**  
+   Primeiro tento garantir que consigo reproduzir o erro de forma consistente. Sem isso, é praticamente impossível debugar bem.
+
+2. **Usar breakpoints nos pontos chave**  
+   No IntelliJ IDEA, coloco breakpoints nos trechos críticos do fluxo e acompanho o estado das variáveis em tempo real. Quando necessário, uso breakpoints condicionais pra evitar ficar parando em cada iteração desnecessária.
+
+3. **Ler o Stack Trace com calma**  
+   Sempre olho o stack trace de cima pra baixo, focando no ponto exato onde o erro aconteceu no meu código. Ignoro as chamadas internas de bibliotecas pra não desviar do foco.
+
+4. **Analisar logs**  
+   Quando o problema não é facilmente reproduzível no debug, costumo aumentar o nível de log (para DEBUG ou TRACE) pra ver o comportamento da aplicação de forma mais detalhada.
+
+5. **Testar hipóteses direto no debugger**  
+   Sempre que possível, altero valores das variáveis no modo debug pra validar hipóteses sem precisar parar e rodar de novo o sistema inteiro.
+
+6. **Ferramentas que normalmente uso**  
+   - **IntelliJ Debugger** (principal ferramenta do dia a dia)  
+   - **Logs com SLF4J e Logback**  
+   - **Postman/Insomnia** quando o problema envolve API  
+   - **DBeaver ou DataGrip** pra consultar rapidamente o banco de dados se for necessário
+
+7. **Isolar o código se for o caso**  
+   Se percebo que o problema está muito enraizado num contexto complexo, crio um teste unitário ou simulo o fluxo em um método separado, só pra conseguir analisar de forma mais controlada.
+
+Pra mim, o debugging não é só "procurar erro", mas entender o comportamento da aplicação no detalhe e validar as hipóteses de forma rápida e eficiente.
+
+---
+
+### 2️⃣ Melhoria de Performance
+
+Quando um sistema Java apresenta problemas de performance, costumo seguir um processo bem prático, focando primeiro em entender onde está o gargalo antes de sair tentando otimizar.
+
+Os passos que normalmente sigo são:
+
+1. **Entender o sintoma real**  
+   Antes de tudo, tento mapear qual exatamente é o problema de performance:  
+   - Está lento no processamento?  
+   - É consumo de memória?  
+   - Ou está demorando pra responder requisições?
+
+2. **Analisar métricas e monitoramento**  
+   Se o sistema já possui algum monitoramento (como Prometheus, Grafana, New Relic ou Spring Actuator), começo olhando por ali. Verifico CPU, memória, tempo de resposta, throughput e outros indicadores.
+
+3. **Usar um profiler quando necessário**  
+   Se não consigo identificar o problema só pelos logs ou métricas, parto pra ferramentas de profiling como:
+   - **VisualVM**  
+   - **YourKit**  
+   - **JProfiler**  
+   
+   Essas ferramentas ajudam a ver o que está consumindo mais CPU, quais métodos estão sendo mais chamados ou onde estão os gargalos de alocação de memória.
+
+4. **Analisar o código com foco em pontos críticos**  
+   Quando já sei onde o problema está, olho o código das partes que mais consomem recursos:
+   - Loops desnecessários
+   - Consultas SQL mal otimizadas (N+1, falta de índice)
+   - Serialização/deserialização lenta
+   - Operações em memória mal dimensionadas
+
+5. **Fazer testes de carga (quando faz sentido)**  
+   Uso ferramentas como JMeter ou Gatling pra simular o comportamento real em ambiente de teste e validar se as mudanças resolvem o problema.
+
+6. **Aplicar melhorias pontuais e reavaliar**  
+   Não gosto de sair "otimizando no escuro". Faço alterações pontuais e volto a medir. Só avanço pra outras otimizações se os números mostrarem necessidade.
+
+7. **Validar em ambiente controlado antes de subir**  
+   Sempre testo a melhoria num ambiente controlado antes de levar pra produção, pra evitar impacto negativo.
+
+---
+
+No geral, meu foco é sempre medir antes de mudar, pra evitar aquela armadilha de "premature optimization".  
+Gosto de tratar performance como um problema objetivo, baseado em dados.
 
